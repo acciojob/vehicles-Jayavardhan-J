@@ -1,12 +1,42 @@
 package com.driver;
 
 public class Car extends Vehicle {
+    public int getWheels() {
+        return wheels;
+    }
+
     private int wheels;
+
+    public String getType() {
+        return type;
+    }
+
+    public int getDoors() {
+        return doors;
+    }
+
+    public int getGears() {
+        return gears;
+    }
+
+    public boolean isManual() {
+        return isManual;
+    }
+
+    public int getCurrentGear() {
+        return currentGear;
+    }
+
     private String type;
     private int doors;
     private int gears;
     private boolean isManual;
     private int currentGear;
+
+    public int getSeats() {
+        return seats;
+    }
+
     private int seats;
 
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
